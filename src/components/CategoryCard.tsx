@@ -10,7 +10,6 @@ interface CategoryCardProps {
 
 export const CategoryCard = ({
   name,
-  image,
   itemCount,
   color,
   active = false

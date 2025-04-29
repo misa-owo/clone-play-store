@@ -1,4 +1,4 @@
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { ProductCard } from "@/components/ProductCard";
 import { siteConfig } from "@/constants/config";
 

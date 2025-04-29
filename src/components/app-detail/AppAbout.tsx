@@ -1,5 +1,4 @@
 import { ArrowRight } from "lucide-react";
-import { siteConfig } from "@/constants/config";
 
 interface AppAboutProps {
   shortDescription: string;

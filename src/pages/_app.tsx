@@ -1,7 +1,6 @@
 import "@/styles/globals.css";
 import { Header } from "@/components/Header"
 import { app,  } from "@/data/products"
-import { useRouter } from "next/router"
 import { AppHeader } from "@/components/app-detail/AppHeader"
 import { AppScreenshots } from "@/components/app-detail/AppScreenshots"
 import { AppDescription } from "@/components/app-detail/AppDescription"
@@ -28,7 +27,7 @@ const AppDetail = () => {
           </div>
           {/* Sidebar */}
           <aside className="w-full lg:w-[340px] flex-shrink-0">
-            <SimilarApps apps={app.similarApps as any as  App[]} />
+            <SimilarApps apps={app.similarApps as unknown as  App[]} />
           </aside>
         </div>
       </main>

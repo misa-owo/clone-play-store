@@ -1,6 +1,6 @@
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { Search, Menu, User, HelpCircle } from "lucide-react"
+import { Search, Menu, HelpCircle } from "lucide-react"
 import { siteConfig } from "@/constants/config"
 import Link from "next/link"
 import { useState } from "react"
