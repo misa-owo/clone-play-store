@@ -38,8 +38,8 @@ export const AppHeader = ({ product }: AppHeaderProps) => (
           </div>
         </div>
       </div>
-      <div className="flex items-center gap-2 mb-6">
-        <Button className="bg-[#00A172]/90 text-[#202124] text-md px-16 py-3 rounded-lg hover:bg-[#00A172] font-sans w-[200px]">Install</Button>
+      <div className="flex flex-col md:flex-row  items-center gap-2 mb-6">
+        <Button className="bg-[#00A172]/90 text-[#202124] text-md px-16 py-3 rounded-lg hover:bg-[#00A172] font-sans w-full md:w-[200px]">Install</Button>
         <Button variant="ghost" className="hover:bg-[#20252D] px-2">
           <Share2 className="!h-6 !w-5 text-[#00A172]" />
           <span className="font-sans text-[#00A172]">Share</span>
