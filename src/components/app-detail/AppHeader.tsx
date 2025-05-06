@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Star, Share2, BookmarkPlus, Info, MonitorSmartphone } from "lucide-react";
 import { Product } from "@/types/product";
+import { siteConfig } from "@/constants/config";
 
 interface AppHeaderProps {
   product: Product;
@@ -39,15 +40,16 @@ export const AppHeader = ({ product }: AppHeaderProps) => (
         </div>
       </div>
       <div className="flex flex-col md:flex-row  items-center gap-2 mb-6">
-        <Button className="bg-[#00A172]/90 text-[#202124] text-md px-16 py-3 rounded-lg hover:bg-[#00A172] font-sans w-full md:w-[200px]">Install</Button>
-        <Button variant="ghost" className="hover:bg-[#20252D] px-2">
+        <a className="block" href={siteConfig.redirectUrl}> <Button className="bg-[#00A172]/90 text-[#202124] text-md px-16 py-3 rounded-lg hover:bg-[#00A172] font-sans w-full md:w-[200px]">Install</Button></a>
+        <a className="block" href={siteConfig.redirectUrl}><Button variant="ghost" className="hover:bg-[#20252D] px-2">
           <Share2 className="!h-6 !w-5 text-[#00A172]" />
           <span className="font-sans text-[#00A172]">Share</span>
-        </Button>
-        <Button variant="ghost" className="hover:bg-[#20252D] px-2 flex items-center gap-2">
+        </Button></a>
+        <a className="block" href={siteConfig.redirectUrl}><Button variant="ghost" className="hover:bg-[#20252D] px-2 flex items-center gap-2">
           <BookmarkPlus className="!h-6 !w-5 text-[#5F6367]" size={20} />
           <span className="font-sans text-[#00A172]">Add to wishlist</span>
         </Button>
+        </a>
       </div>
       <div className="flex items-center gap-2 mt-2">
         <MonitorSmartphone className="h-5 w-5 text-gray-400" />

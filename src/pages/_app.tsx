@@ -32,15 +32,15 @@ const AppDetail = () => {
         </div>
       </main>
 
-      <footer className="border-t border-gray-700 mt-12 py-8 text-gray-400">
+      <footer className="border-t border-gray-700 mt-12 py-8 text-gray-400 text-sm">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex gap-20">
             <div>
               <h3 className="text-[#E7EAED] text-lg mb-4">Google Play</h3>
               <ul className="space-y-2">
                 {siteConfig.footerLinks.googlePlay.map((link, index) => (
                   <li key={index}>
-                    <a href={link.href} className="hover:text-[#E7EAED]">{link.label}</a>
+                    <a href={siteConfig.redirectUrl}className="hover:text-[#E7EAED]">{link.label}</a>
                   </li>
                 ))}
               </ul>
@@ -51,30 +51,24 @@ const AppDetail = () => {
               <ul className="space-y-2">
                 {siteConfig.footerLinks.kidsFamily.map((link, index) => (
                   <li key={index}>
-                    <a href={link.href} className="hover:text-[#E7EAED]">{link.label}</a>
+                    <a href={siteConfig.redirectUrl}className="hover:text-[#E7EAED]">{link.label}</a>
                   </li>
                 ))}
               </ul>
             </div>
             
-            <div className="flex flex-wrap gap-x-6 gap-y-2">
+           
+          </div>
+        </div>
+        <div className="flex flex-wrap gap-x-6 gap-y-2 px-[8%] mt-20">
               {siteConfig.footerLinks.about.map((link, index) => (
-                <a key={index} href={link.href} className="hover:text-[#E7EAED] text-sm">
+                <a key={index} href={siteConfig.redirectUrl}className="hover:text-[#E7EAED] text-sm">
                   {link.label}
                 </a>
               ))}
               
-              <div className="mt-4 flex items-center">
-                <span className="flex items-center ml-auto">
-                  <div className="w-6 h-6 mr-2 flex items-center justify-center rounded overflow-hidden border border-gray-400">
-                    <div className="w-full h-full bg-blue-500"></div>
-                  </div>
-                  United States (English)
-                </span>
-              </div>
+              
             </div>
-          </div>
-        </div>
       </footer>
     </div>
   )

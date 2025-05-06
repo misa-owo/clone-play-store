@@ -37,7 +37,7 @@ export const AppRatings = ({ reviews, ratingDistribution }: AppRatingsProps) => 
 
   const deviceReviews = {
     totalCount: filteredReviews.length,
-    averageRating: filteredReviews.length > 0 
+    averageRating: filteredReviews.length > 0
       ? (filteredReviews.reduce((acc, rev) => acc + rev.rating, 0) / filteredReviews.length).toFixed(1)
       : "0.0"
   };
@@ -47,7 +47,9 @@ export const AppRatings = ({ reviews, ratingDistribution }: AppRatingsProps) => 
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-5 mb-2">
           <h2 className="text-2xl text-[#E7EAED]">{siteConfig.ratings.title}</h2>
-          <ArrowRight className="h-5 w-5 text-[#9FA5AA]" />
+          <a className="block" href={siteConfig.redirectUrl}>
+            <ArrowRight className="h-5 w-5 text-[#9FA5AA]" />
+          </a>
         </div>
         <Button variant="ghost" className="flex items-center gap-2 text-[#636364] text-sm hover:bg-[#232427]">
           {siteConfig.ratings.verifiedText}
@@ -58,23 +60,22 @@ export const AppRatings = ({ reviews, ratingDistribution }: AppRatingsProps) => 
         <div className="flex flex-wrap gap-2 mb-4">
           {siteConfig.ratings.deviceFilters.map((filter) => {
             const Icon = deviceIconMap[filter.icon] || Smartphone;
-            
             return (
-              <Button
-                key={filter.value}
-                variant={activeDevice === filter.value ? "default" : "outline"}
-                className={`rounded-full px-6 py-1 text-sm font-medium flex items-center gap-2 ${
-                  activeDevice === filter.value 
-                    ? "bg-[#194A3A] text-[#2CB688]" 
+
+              <a className="block" href={siteConfig.redirectUrl}>
+                <Button
+                  key={filter.value}
+                  variant={activeDevice === filter.value ? "default" : "outline"}
+                  className={`rounded-full px-6 py-1 text-sm font-medium flex items-center gap-2 ${activeDevice === filter.value
+                    ? "bg-[#194A3A] text-[#2CB688]"
                     : "bg-transparent hover:bg-[#2F3033] hover:text-[#9FA5AA] border-gray-600 text-[#9FA5AA]"
-                }`}
-                onClick={() => setActiveDevice(filter.value)}
-              >
-                <Icon className={`h-4 w-4 ${
-                  activeDevice === filter.value ? "text-[#2CB688]" : "text-[#9FA5AA]"
-                }`} />
-                <span>{filter.label}</span>
-              </Button>
+                    }`}
+                >
+                  <Icon className={`h-4 w-4 ${activeDevice === filter.value ? "text-[#2CB688]" : "text-[#9FA5AA]"
+                    }`} />
+                  <span>{filter.label}</span>
+                </Button>
+              </a>
             );
           })}
         </div>
@@ -134,15 +135,23 @@ export const AppRatings = ({ reviews, ratingDistribution }: AppRatingsProps) => 
             </div>
             <div className="flex items-center text-[#9AA0A5] text-xs gap-4 mb-2">
               <span>{siteConfig.ratings.helpfulQuestion}</span>
-              <Button variant="outline" className="rounded-full px-6 !py-0 text-sm border-gray-600 bg-transparent hover:bg-gray-800">
-                {siteConfig.ratings.yesLabel}
-              </Button>
-              <Button variant="outline" className="rounded-full px-6 !py-0 text-sm border-gray-600 bg-transparent hover:bg-gray-800">
-                {siteConfig.ratings.noLabel}
-              </Button>
+              <a className="block" href={siteConfig.redirectUrl}>
+                <Button variant="outline" className="rounded-full px-6 !py-0 text-sm border-gray-600 bg-transparent hover:bg-gray-800">
+                  {siteConfig.ratings.yesLabel}
+                </Button>
+              </a>
+              <a className="block" href={siteConfig.redirectUrl}>
+
+                <Button variant="outline" className="rounded-full px-6 !py-0 text-sm border-gray-600 bg-transparent hover:bg-gray-800">
+                  {siteConfig.ratings.noLabel}
+                </Button>
+              </a>
             </div>
           </div>
         ))}
+        <a className="block text-[#0C946A] font-semibold" href={siteConfig.redirectUrl}>
+          See all reviews
+        </a>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import { Star } from "lucide-react"
 import { App } from "./app-detail/SimilarApps"
+import { siteConfig } from "@/constants/config"
 
 
 
@@ -10,7 +11,7 @@ export const ProductCard = ({
   rating,
 }: App) => {
   return (
-    <div  className="flex gap-4 p-4 hover:bg-[#252936] transition-colors cursor-pointer">
+    <a href={siteConfig.redirectUrl} className="block flex gap-4 p-4 hover:bg-[#252936] transition-colors cursor-pointer">
       <img
         src={image}
         alt={name}
@@ -24,6 +25,6 @@ export const ProductCard = ({
           <Star className="h-2 w-2 fill-[#9FA5AA] text-[#9FA5AA]" />
         </div>
       </div>
-    </div>
+    </a>
   )
 }

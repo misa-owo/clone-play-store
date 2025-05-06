@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Le Bandit Slots - Android APK Download & Play",
 
   description: "Download Le Bandit Slots APK for Android. Enjoy thrilling slot reels, bonus features, and real casino vibes. Fast & secure direct APK download.",
-
+  redirectUrl: "https://yeet.com/register?aff=yeetcasinogg",
   searchPlaceholder: "Search for apps & games",
 
   headerLinks: [
