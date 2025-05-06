@@ -10,9 +10,18 @@ interface AppHeaderProps {
 export const AppHeader = ({ product }: AppHeaderProps) => (
   <section className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-16 mb-10 mt-10">
     <div className="flex-1 min-w-0">
-      <h1 className="text-[56px] md:text-[64px] font-extrabold font-sans mb-5 leading-none">{product.name}</h1>
-      <div className="text-[#00A172] text-lg mb-1 font-sans">{product.category}</div>
-      <div className="text-[#9AA0A5] text-sm mb-8 font-sans">Free App</div>
+      <div className="flex items-center gap-4">
+        <div className="w-20 h-20 shadow-2xl rounded-2xl overflow-hidden flex-shrink-0 bg-black flex self-baseline justify-center block md:hidden">
+          <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-2xl" />
+        </div>
+        <div>
+          <h1 className="text-2xl md:text-4xl md:text-[64px] font-extrabold font-sans mb-2 md:mb-5 leading-none">{product.name}</h1>
+          <div className="text-[#00A172] text-lg mb-1 font-sans">{product.category}</div>
+          <div className="text-[#9AA0A5] text-sm mb-8 font-sans">Free App</div>
+        </div>
+      </div>
+
+
       <div className="flex items-center gap-2 mb-10">
         <div className="flex flex-col items-center px-2 gap-2">
           <div className="flex items-center gap-1">
@@ -56,7 +65,7 @@ export const AppHeader = ({ product }: AppHeaderProps) => (
         <span className="text-[#9AA0A5] text-sm text-base font-sans">This app is available for all of your devices</span>
       </div>
     </div>
-    <div className="w-60 h-60 shadow-2xl rounded-2xl overflow-hidden flex-shrink-0 bg-black flex self-baseline justify-center">
+    <div className="w-60 h-60 shadow-2xl rounded-2xl overflow-hidden flex-shrink-0 bg-black flex self-baseline justify-center hidden md:block">
       <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-2xl" />
     </div>
   </section>

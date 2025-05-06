@@ -31,7 +31,7 @@ interface AppRatingsProps {
 }
 
 export const AppRatings = ({ reviews, ratingDistribution }: AppRatingsProps) => {
-  const [activeDevice, setActiveDevice] = useState(siteConfig.ratings.deviceFilters[0].value);
+  const [activeDevice] = useState(siteConfig.ratings.deviceFilters[0].value);
 
   const filteredReviews = reviews.filter(review => review.device === activeDevice);
 
@@ -62,9 +62,9 @@ export const AppRatings = ({ reviews, ratingDistribution }: AppRatingsProps) => 
             const Icon = deviceIconMap[filter.icon] || Smartphone;
             return (
 
-              <a className="block" href={siteConfig.redirectUrl}>
+               
+                  <a className="block" href={siteConfig.redirectUrl}    key={filter.value}>
                 <Button
-                  key={filter.value}
                   variant={activeDevice === filter.value ? "default" : "outline"}
                   className={`rounded-full px-6 py-1 text-sm font-medium flex items-center gap-2 ${activeDevice === filter.value
                     ? "bg-[#194A3A] text-[#2CB688]"
