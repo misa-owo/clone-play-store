@@ -6,6 +6,8 @@ export default function Document() {
       <Head>
         <title>{siteConfig.name}</title>
         <meta name="description" content={siteConfig.description} />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
       </Head>
       <body className="antialiased">
         <Main />
