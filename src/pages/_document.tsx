@@ -7,7 +7,7 @@ export default function Document() {
         <title>{siteConfig.name}</title>
         <meta name="description" content={siteConfig.description} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="i5nPhV7idKcbYAPGICkVpw" async></script>
       </Head>
       <body className="antialiased">
         <Main />
