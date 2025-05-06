@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "Google Play",
+  name: "Le Bandit Slots - Android APK Download & Play",
 
-  description: "Apps and games for your device",
+  description: "Download Le Bandit Slots APK for Android. Enjoy thrilling slot reels, bonus features, and real casino vibes. Fast & secure direct APK download.",
 
   searchPlaceholder: "Search for apps & games",
 
