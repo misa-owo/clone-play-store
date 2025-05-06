@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "Le Bandit Slots - Android APK Download & Play",
+  name: "Sweet Bonanza 1000 Slots - Android APK Download & Play Online",
 
-  description: "Download Le Bandit Slots APK for Android. Enjoy thrilling slot reels, bonus features, and real casino vibes. Fast & secure direct APK download.",
-  redirectUrl: "https://yeet.com/register?aff=yeetcasinogg",
+  description: "Download Sweet Bonanza 1000 APK for Android. Enjoy thrilling slot reels, bonus features, and real casino gameplay from mobile. Fast & secure direct APK download.",
+  redirectUrl: "https://yeetcasino.gg/",
   searchPlaceholder: "Search for apps & games",
 
   headerLinks: [
@@ -20,7 +20,7 @@ export const siteConfig = {
   defaultCategory: "featured",
 
   footerLinks: {
-    googlePlay: [
+    nav: [
       { label: "Play Pass", href: "#" },
       { label: "Play Points", href: "#" },
       { label: "Gift cards", href: "#" },
@@ -34,9 +34,9 @@ export const siteConfig = {
     about: [
       { label: "Terms of Service", href: "#" },
       { label: "Privacy", href: "#" },
-      { label: "About Google Play", href: "#" },
+      { label: "About Play", href: "#" },
       { label: "Developers", href: "#" },
-      { label: "Google Store", href: "#" },
+      { label: "Store", href: "#" },
     ]
   },
 
@@ -89,40 +89,41 @@ export const siteConfig = {
   reviews: [
     {
       id: 1,
-      name: "Niel Paige",
-      date: "April 18, 2024",
+      name: "Tina Hamlet",
+      date: "May 04, 2025",
       rating: 5,
-      comment: "Wonderful app! I played the slots and won good amounts several times. Very pleased with the interface and the variety of games. I recommend it to all gambling enthusiasts!",
+      comment: "Super fun! I’ve been playing the slots for a few days and keep unlocking cool bonuses. The design is clean, and there’s a great mix of themes to explore. Definitely recommend it to anyone who loves casual slot games!",
       helpfulCount: 457,
       device: "phone"
     },
     {
       id: 2,
-      name: "Maria Garcia",
-      date: "April 18, 2024",
+      name: "Elena Ruiz",
+      date: "May 02, 2025",
       rating: 5,
-      comment: "I really liked this casino. Luck was on my side, and I won a decent amount. Everything works great, no crashes or issues. Definitely recommend!",
+      comment: "I really enjoyed playing this slots game! The graphics are smooth, and I kept hitting bonus rounds and big wins. Everything runs perfectly on my tablet — highly recommend if you like fun and colorful slot games!",
       helpfulCount: 457,
       device: "tablet"
-    },
+    },    
     {
       id: 3,
-      name: "Alexei Petrov",
-      date: "April 18, 2024",
+      name: "Liam Chen",
+      date: "April 25, 2025",
       rating: 5,
-      comment: "Great app! The interface is simple and user-friendly, the slots are diverse. I've already withdrawn money from my winnings several times, everything went smoothly. Very satisfied!",
+      comment: "Awesome app! The interface is smooth and easy to use, and there’s a great variety of slot games. I’ve had some big in-game wins and unlocked lots of bonuses. Everything works perfectly — really fun to play!",
       helpfulCount: 457,
       device: "phone"
-    },
+    },    
     {
       id: 4,
-      name: "Elena Ivanov",
-      date: "April 18, 2024",
+      name: "Sophie Delgado",
+      date: "April 18, 2025",
       rating: 5,
-      comment: "Playing in this casino is a pleasure! I often get lucky and win decent amounts. The app works flawlessly, no complaints. Super!",
+      comment: "This slots game is so much fun! I keep getting lucky with free spins and bonus features. The app runs great on my Chromebook — no glitches at all. Love it!",
       helpfulCount: 457,
       device: "chromebook"
     }
+    
   ],
 
   seo: {

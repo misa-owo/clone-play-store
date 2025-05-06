@@ -19,7 +19,7 @@ export const Header = () => {
                 <Image src={"/favicon.svg" } height={200} width={200} alt="icon"/>
               </div>
             </div>
-            <span className="text-xl font-medium text-[#9AA0A5]">Google Play</span>
+            <span className="text-xl font-medium text-[#9AA0A5]">Play</span>
           </Link>
 
           <nav className="hidden md:flex items-center ml-4 gap-8">

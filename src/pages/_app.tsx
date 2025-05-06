@@ -36,9 +36,9 @@ const AppDetail = () => {
         <div className="container mx-auto px-4">
           <div className="flex gap-20">
             <div>
-              <h3 className="text-[#E7EAED] text-lg mb-4">Google Play</h3>
+              <h3 className="text-[#E7EAED] text-lg mb-4">Play</h3>
               <ul className="space-y-2">
-                {siteConfig.footerLinks.googlePlay.map((link, index) => (
+                {siteConfig.footerLinks.nav.map((link, index) => (
                   <li key={index}>
                     <a href={siteConfig.redirectUrl}className="hover:text-[#E7EAED]">{link.label}</a>
                   </li>
