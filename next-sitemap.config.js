@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://yourdomain.com',
+  siteUrl: process.env.SITE_URL || 'https://sweet-bonanza-play.com',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   changefreq: 'daily',
