@@ -15,12 +15,6 @@ module.exports = {
         changefreq: 'daily',
         priority: 1,
         lastmod: new Date().toISOString(),
-      },
-      {
-        loc: '/404',
-        changefreq: 'monthly',
-        priority: 0.1,
-        lastmod: new Date().toISOString(),
       }
     ]
   },
