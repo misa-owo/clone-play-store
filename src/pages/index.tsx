@@ -1,5 +1,4 @@
 import { Header } from "@/components/Header";
-import Head from "next/head";
 import { app } from "@/data/products";
 import { AppHeader } from "@/components/app-detail/AppHeader";
 import { AppScreenshots } from "@/components/app-detail/AppScreenshots";
