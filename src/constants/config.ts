@@ -127,8 +127,8 @@ export const siteConfig = {
   ],
 
   seo: {
-    title: "Bonanza Play - App Store",
-    description: "Download and enjoy apps and games from Bonanza Play Store",
+    title: "Slots App Store",
+    description: "Download and enjoy apps and games from Slots App Store",
   },
 
   ratings: {
